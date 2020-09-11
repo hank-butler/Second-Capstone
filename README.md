@@ -44,5 +44,14 @@ Boxplots of price were then created to breakdown the distribution of prices by t
 
 Scatter plots of the minimum, median, and maximum distance of a listing to a point of interest were also produced to chart the relationship, if any, was apparent.
 
+## Modeling
+
+Linear models were first experimented with but were quickly abandoned due to exceptionally poor performance. Tree based models were then used to predict price. Random Forest Regression, Gradient Boosting Regression, and Extra Trees Regression were all used.
+
+## Model Results
+
+The best performing models were the following:
+
+*Random Forest Regression*
 
 
