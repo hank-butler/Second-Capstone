@@ -52,6 +52,37 @@ Linear models were first experimented with but were quickly abandoned due to exc
 
 The best performing models were the following:
 
-*Random Forest Regression*
+__Random Forest Regression__
 
+Best Parameters:
+* max_depth = 20
+* max_features = log2
+* n_estimators = 300
 
+Training Set Score:
+* 0.804
+
+Test Set Score:
+* 0.345
+
+__Gradient Boosting Regression__
+
+Best Parameters:
+* max_depth = 20
+* max_features = log2
+* min_samples_leaf = 10
+* n_estimators = 100
+
+Training Set Score:
+* 0.686
+
+Test Set Score:
+* 0.317
+
+## Model Evaluation
+
+The models were generally overfitting. An exhaustive list of different techniques were used to reduce overfitting including removing features deemed unimportant from previous models (found via the features_importances_ attribute of models), changing different hyperparameters, and removing outliers. Ultimately the price outliers were decided to be kept in due to the fact that they are not an insiginificant part of the dataset and it would be intellectually dishonest to have removed them to simply increase a model's accuracy.
+
+## Business Impact
+
+There is a small relationship between an AirBNB listing's distance from points of interest and a listing's price. However, as judged by the low scores from the models, it does not paint the full picture. This does show that the closer a listing is to various points of interest, it's price should partially reflect that. Thus, new listings with similar features to existing listings can now be more appropriately priced to maximize profit for the host and AirBNB.
