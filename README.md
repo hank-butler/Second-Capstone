@@ -86,3 +86,13 @@ The models were generally overfitting. An exhaustive list of different technique
 ## Business Impact
 
 There is a small relationship between an AirBNB listing's distance from points of interest and a listing's price. However, as judged by the low scores from the models, it does not paint the full picture. This does show that the closer a listing is to various points of interest, it's price should partially reflect that. Thus, new listings with similar features to existing listings can now be more appropriately priced to maximize profit for the host and AirBNB.
+
+## Conclusion
+
+Despite the inability of the models to fully explain an AirBNB listing's price, it does explain part of a listing's price. This knowledge can be used for further analysis and factored into a new pricing model. In order to fully encapsalate what goes into a listing's price, two potentially significant features not in the AirBNB data were realized during the analysis. 
+
+First, a listing's square footage was not readily available. Sqaure footage is a feature in the original AirBNB data set, however, less than two percent of listings had the number present. The sparsity of this feature hindered the explanatory power of the models. All else being equal, we can assume that a larger listing would be more expensive than a smaller listing since this is consistently reflected in the prices of apartments and homes.
+
+Second, the amount of rent or mortgage payment of a host was not in the data. When considering listing their home on AirBNB, a host's rent would most likely be their first point in considering in how to price the listing. For instance if I was paying $1,500/month in rent and wanted to list my apartment on AirBNB, the price floor for my nightly rate would most likely be 1500 / 30 = 50 since that is what my rent amounts to on a daily basis. 
+
+By not having these two potentially significant data points in our data set, the models were not fully able to capture how an AirBNB listing is priced. 
