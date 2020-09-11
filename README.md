@@ -36,7 +36,13 @@ features, the dataframe was left with the following features:
 
 The hypothesis for the project is that a listing's location to popular attractions in Austin will have an effect on the price of the listing. Each listing's latitude and longitude was included in the AirBNB data. In order to calculate the distance from a listing to each point of interest, the coordinates for each point of interest was pulled from Google Maps. Then the Euclidean distance was calculated from a listing to each point of interest. Additionally, the minimum, median, and maxiumu distances from each listing to a point of interest were also calculated.
 
-## Explorator
+## Exploratory Data Analysis
+
+A histogram of listing prices showed a heavily right skewed distribution due to highly priced listings.
+
+Boxplots of price were then created to breakdown the distribution of prices by the room type of a listing. The boxplots further showed the outliers.
+
+Scatter plots of the minimum, median, and maximum distance of a listing to a point of interest were also produced to chart the relationship, if any, was apparent.
 
 
 
